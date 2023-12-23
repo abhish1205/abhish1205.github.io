@@ -1,0 +1,324 @@
+:root{
+    --primary-color: silver;
+    --secondary-color: #2b2b2c;
+}
+.dark{
+    --primary-color: #2b2b2c;
+    --secondary-color: silver;
+}
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    overflow-x: hidden;   
+}
+#top{
+    height: 5%;
+    width: 96%;
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 2%;
+    font-size: 120%;
+}
+.logo{
+    width: 10%;
+    padding-right: 2%;
+}
+#l{
+    width: 100%;
+}
+.grey{
+    height: 50px;
+    width: 40%;
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    color: var(--secondary-color);
+} 
+#part{
+    padding-left: 8%;
+}
+.txtanim{
+    width: 42%;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+span{
+    color:crimson;
+}
+.menu{
+    display: flex;
+    width: 45%;
+    color: var(--primary-color);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+#top li{
+    position: relative;
+    cursor: pointer;
+}
+#top li::before{
+    content: "";
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s ease-in-out;
+}
+#top li:hover::before{
+    content: "";
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.header{
+    font-family: 'Poppins',sans-serif;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    width: 100%;
+    padding: 2% 0 2% 0;
+    margin: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+#column1,#column2,#column3{
+    padding-left: 1%;
+    padding-right: 0;
+    width: 32%;
+}
+.row img{
+    width:100%;
+}
+.row img:hover{
+    transform: scale(1.05);
+}
+#icon{
+    width: 4%;
+    height: 100%;
+    cursor: pointer;
+    filter: invert();
+}
+#icon:hover{
+    transform: scale(1.1);
+}
+.imgbox{
+    left: 44%;
+    width: 56%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+.imgbox img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: bottom 1s, left 1s;
+}
+.main{
+ filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+.imgbox:hover .back{
+    bottom: 40px;
+}
+.imgbox:hover .main{
+    animation: glowing 3s ease-in-out infinite; 
+    left: 10%;
+}
+@keyframes glowing {
+    0% {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+    }
+    50% {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.9));
+    }
+    100% {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5)); 
+    }
+  }
+  
+.tbox{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 30%;
+    bottom: 20%;
+    background-color: var(--secondary-color);
+    display: flex;
+}
+.tbox #pfp{
+    height: 36%;
+    top: 7%;
+    left: 44%;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px var(--primary-color);
+}
+.tbox #pfp:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.tbox h1{
+    height: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--primary-color);
+}
+#sicon{
+    display: flex;
+    height: 15%;
+    width: 40%;
+    top: 70%;
+    left: 30%;
+    position: absolute;
+}
+#sicon img{
+    padding-left: 13%;
+    width: 75%;
+    filter: invert(95%);
+}
+#sicon img:hover{
+    filter: invert(50%);
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 44%;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.intro p{
+    font-size: 20px;
+    color: var(--secondary-color);
+    padding-left: 4%;
+    padding-top: 2%;
+    margin: 0;
+}
+#bold{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 0;
+    color: transparent;
+    -webkit-text-stroke: 1.3px var(--secondary-color);
+    letter-spacing: 2px;
+    background: url(../images/ut.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 40s linear infinite;
+}
+@keyframes animate{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.intro h1{
+    padding-left: 4%;
+    margin: 0;
+    color: var(--secondary-color);
+}
+#download{
+    cursor: pointer;
+    color: silver;
+    display: inline-block;
+    margin: 20px 20px;
+    width: 30%;
+    padding: 15px 30px;
+    transition: ease all 0.35s;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: #44F;
+    position: relative;
+    z-index: 1001;
+}
+#download::before{
+    background-color: #d82525cc;
+    top: 0;
+    width: 0;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+#download:hover::before{
+    left: 0;
+    width: 100%;
+    right: auto;
+}
+hr{
+    border-color: var(--secondary-color);
+    border-style: solid;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#ad{
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+#ad h3{
+    margin: 0%;
+}
+.gbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+#gitem{
+    color: var(--primary-color);
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--secondary-color);
+    width: 15%; 
+    padding: 2%;
+    margin: 1%;
+    border-radius: 5%;
+    text-align: center;
+}
+#gitem img{
+    width: 100%;
+    filter: drop-shadow(0 0 10px rgba(232, 56, 56, 0.5));
+}
