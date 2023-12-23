@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Album</title>
+    <link rel="stylesheet" href="css/styleA.css">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+
+</head>
+<body >
+    <div id="top">
+        <div class="logo"><a href="index.html"><img id="l" src="photos/logo.png"></a></div>
+        <div class="grey">
+           <div class="black">Welcome to My Album</div>
+           <div id="part">|</div>
+           <div class="txtanim">
+           I am a&nbsp;<span class="auto-type"></span>
+           </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mygear.html">My Gear</a></li>
+                <li>My Projects</li>
+            </ul>
+        </div>
+        <img src="images/moon.png" id="icon" >
+    </div>
+    <div class="header">
+        <h1> My Album</h1>
+        </div>
+    <div class="row">
+        <div id="column1">
+            <a href="photos/IMG20230529112136.jpg" data-lightbox="gallery"><img src="photos/IMG20230529112136.jpg"></a>
+            <a href="photos/IMG20230529183004.jpg" data-lightbox="gallery"><img src="photos/IMG20230529183004.jpg"></a>
+            <a href="photos/IMG20230530093546.jpg" data-lightbox="gallery"><img src="photos/IMG20230530093546.jpg"></a>
+            <a href="photos/IMG20230529191031.jpg" data-lightbox="gallery"><img src="photos/IMG20230529191031.jpg"></a>
+            <a href="photos/IMG20230529200739.jpg" data-lightbox="gallery"><img src="photos/IMG20230529200739.jpg"></a>
+        </div>
+        <div id="column2">
+            <a href="photos/IMG20230529194118.jpg" data-lightbox="gallery"><img src="photos/IMG20230529194118.jpg"></a>
+            <a href="photos/IMG20230529194714.jpg" data-lightbox="gallery"><img src="photos/IMG20230529194714.jpg"></a>
+            <a href="photos/IMG20230529200735.jpg" data-lightbox="gallery"><img src="photos/IMG20230529200735.jpg"></a>
+            <a href="photos/IMG20230530091321.jpg" data-lightbox="gallery"><img src="photos/IMG20230530091321.jpg"></a>
+            <a href="photos/IMG20230530091423.jpg" data-lightbox="gallery"><img src="photos/IMG20230530091423.jpg"></a>
+            </div>
+        <div id="column3">
+            <a href="photos/IMG20230530092619.jpg" data-lightbox="gallery"><img src="photos/IMG20230530092619.jpg"></a>
+            <a href="photos/IMG20230530093520.jpg" data-lightbox="gallery"><img src="photos/IMG20230530093520.jpg"></a>            
+            <a href="photos/IMG20230529185421.jpg" data-lightbox="gallery"><img src="photos/IMG20230529185421.jpg"></a>
+            <a href="photos/IMG20230529191914.jpg" data-lightbox="gallery"><img src="photos/IMG20230529191914.jpg"></a>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+        strings: ["Student","Coder","Web Developer","Photographer","Editor"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+        })
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+        var blob = document.getElementById("blob");
+        icon.onclick = function(){
+        document.body.classList.toggle("dark");
+        if(document.body.classList.contains("dark")){
+            icon.src = "images/sun.png";
+            blob.src = "images/bimg2.png";
+        }else{
+            icon.src = "images/moon.png";
+            blob.src = "images/bimg1.png";
+        }}
+    </script>
+
+
+</body>
+</html>

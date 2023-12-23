@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styleA.css">
+</head>
+<body>
+    <div id="top">
+        <div class="logo"><a href="index.html"><img id="l" src="images/clogo.png"></a></div>
+        <div class="grey">
+           <div class="black">Ways To Contact ME</div>
+           <div id="part">|</div>
+           <div class="txtanim">
+           I am a&nbsp;<span class="auto-type"></span>
+           </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="album.html">My Album</a></li>
+                <li><a href="mygear.html">My Gear</a></li>
+                <li>My Projects</li>
+            </ul>
+        </div>
+        <img src="images/moon.png" id="icon" >
+    </div>
+
+    <div class="tbox">
+      <img id="pfp" src="images/mypic1.jpg">
+      <h1>Contact Me</h1>
+      <div id="sicon">
+        <ul>
+            <li><a href="https://www.instagram.com/abhi.shek.2" target="_blank"><img src="images/insta.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/kumar-abhishek-41b8b1225/" target="_blank"><img src="images/in.png"></a></li>
+            <li><a href="https://github.com/abhish1205" target="_blank"><img src="images/gith.webp"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100034150342171" target="_blank"><img src="images/fb.webp"></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+        strings: ["Student","Coder","Web Developer","Photographer","Editor"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+        })
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+        var blob = document.getElementById("blob");
+        icon.onclick = function(){
+        document.body.classList.toggle("dark");
+        if(document.body.classList.contains("dark")){
+            icon.src = "images/sun.png";
+            blob.src = "images/bimg2.png";
+        }else{
+            icon.src = "images/moon.png";
+            blob.src = "images/bimg1.png";
+        }}
+    </script>
+</body>
+</html>
