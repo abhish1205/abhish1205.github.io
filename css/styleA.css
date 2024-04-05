@@ -24,6 +24,8 @@ body {
     padding-right: 2%;
 }
 #l{
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .grey{
@@ -36,18 +38,24 @@ body {
     border-radius: 13px;
     color: var(--secondary-color);
 } 
+.black{
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
 #part{
-    padding-left: 8%;
+    padding-left: 1vw;
 }
 .txtanim{
-    width: 42%;
-    padding-left: 8%;
+    font-size: 2vw;
+    width: 20vw;
+    padding-left: 1vw;
     padding-right: 0%;
 }
 span{
     color:crimson;
 }
 .menu{
+    font-size: 2vw;
     display: flex;
     width: 45%;
     color: var(--primary-color);
@@ -126,9 +134,8 @@ li{
     transform: scale(1.1);
 }
 .imgbox{
-    left: 44%;
-    width: 56%;
-    height: 80%;
+    right: 2%;
+    width: 36vw;
     position: absolute;
     bottom: 0;
 }
@@ -219,19 +226,19 @@ li{
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    width: 44%;
+    width: 58vw;
     padding: 0;
     font-family: 'Poppins',sans-serif;
 }
 .intro p{
-    font-size: 20px;
+    font-size: 1.5vw;
     color: var(--secondary-color);
     padding-left: 4%;
     padding-top: 2%;
     margin: 0;
 }
 #bold{
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: bold;
     margin: 0;
     padding-top: 0;
@@ -249,6 +256,7 @@ li{
     }
 }
 .intro h1{
+    font-size: 2vw;
     padding-left: 4%;
     margin: 0;
     color: var(--secondary-color);
@@ -257,11 +265,11 @@ li{
     cursor: pointer;
     color: silver;
     display: inline-block;
-    margin: 20px 20px;
-    width: 30%;
-    padding: 15px 30px;
+    margin: 2vw 2vw;
+    width: 15vw;
+    padding: 2vw 2vw;
     transition: ease all 0.35s;
-    font-size: medium;
+    font-size: 2vw;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     background-color: #44F;
@@ -289,8 +297,8 @@ hr{
     border-color: var(--secondary-color);
     border-style: solid;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 #ad{
     color: var(--secondary-color);
@@ -299,6 +307,7 @@ hr{
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
+    font-size: 2vw;
 }
 #ad h3{
     margin: 0%;
