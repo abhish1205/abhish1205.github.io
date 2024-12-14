@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECTS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8a8f93;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 300px;
+            height: 400px; /* Fixed height for the card */
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-text {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                width: 45%; /* Adjust size for tablets and larger screens */
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .card {
+                width: 300px; /* Fixed size for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <a href="aqi.html" style="text-decoration: none;color: inherit;"><div class="card" style="background-image: url(images/AQI.jpg);"> 
+            <div class="card-text">AQI Check</div>
+        </div></a>
+        <div class="card" style="background-image: url(images/Orelax.webp);"> 
+            <div class="card-text">Orelax<br>(under maintenance)</div>
+        </div>
+        <a href="ttv.html" style="text-decoration: none;color: inherit;"><div class="card" style="background-image: url(images/ttv.webp);"> 
+            <div class="card-text">Text 2 Voice</div>
+        </div></a>
+    </div>
+</body>
+</html>
