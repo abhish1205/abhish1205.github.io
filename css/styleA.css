@@ -137,7 +137,7 @@ li{
 .imgbox{
     right: 2%;
     width: 36vw;
-    position: absolute;
+    position: fixed;
     top: 100vh;
 }
 .imgbox img{
@@ -182,22 +182,20 @@ li{
 .tbox #pfp{
     height: 36%;
     top: 7%;
-    left: 44%;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50%;
     box-shadow: 5px 5px 10px var(--primary-color);
 }
-.tbox #pfp:hover{
-    transition: 1s;
-    transform: scale(1.1);
-}
+
 .tbox h1{
     height: 10%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
-    font-size: 3em;
+    font-size: 7vh;
     font-family: 'Poppins',sans-serif;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
@@ -233,14 +231,14 @@ li{
     font-family: 'Poppins',sans-serif;
 }
 .intro p{
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     color: var(--secondary-color);
     padding-left: 4%;
     padding-top: 2%;
     margin: 0;
 }
 #bold{
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: bold;
     margin: 0;
     padding-top: 0;
@@ -268,7 +266,7 @@ li{
     color: silver;
     display: inline-block;
     margin: 2vw 2vw;
-    width: 15vw;
+    width: 25vw;
     padding: 2vw 2vw;
     transition: ease all 0.35s;
     font-size: 2vw;
